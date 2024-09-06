@@ -23,7 +23,7 @@ const HeaderPrimaryDropdown = () => {
   return (
     <div className=" max-[1020px]:hidden w-full bg-blue-500 h-96 absolute left-0 top-24 shadow-xl flex flex-column columns-2 cursor-default">
       {headerPrimaryDropdownContent.map((item, index) => {
-        return <HeaderPrimaryDropdownContent {...item} />;
+        return <HeaderPrimaryDropdownContent {...item} key={index} />;
       })}
     </div>
 

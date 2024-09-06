@@ -39,7 +39,7 @@ const HeaderNav = () => {
     <ul className="flex flex-row gap-6 max-[1020px]:hidden items-center">
       {
         navItems.map((item, index) =>{
-            return <HeaderNavLi {...item} />
+            return <HeaderNavLi {...item} key={index}/>
         })
       }
     </ul>
