@@ -2,6 +2,7 @@
 import { GoChevronDown } from "react-icons/go";
 import { useState } from "react";
 import HeaderPrimaryDropdown from "./dropdown-menu";
+import { IoIosGlobe } from "react-icons/io";
 
 export interface LiInterface {
   //define os tipos de valores aceitos por cada prop
@@ -11,6 +12,7 @@ export interface LiInterface {
   isChevronDownAvailable?: boolean;
   isButtonAvailable?: boolean;
   chevronGap?: number;
+  isModalButton?: boolean;
 }
 
 const HeaderNavLi = ({
@@ -21,10 +23,16 @@ const HeaderNavLi = ({
   isButtonAvailable = false,
   chevronGap = 0,
   isDropdownButton = false,
+  isModalButton = false,
 }: LiInterface) => {
   const [isOpen, setIsOpen] = useState(false);
   function toggleDropdown() {
     setIsOpen((isOpen) => !isOpen);
+  }
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  function toggleModal() {
+    setIsModalOpen((isModalOpen) => !isModalOpen);
   }
 
   return (
@@ -57,6 +65,15 @@ const HeaderNavLi = ({
       {isButtonAvailable && (
         <button className="h-11 font-bold bg-blue-500 pl-10 pr-10 rounded-full text-white hover:bg-blue-900 hover:ease-in-out duration-300 focus:outline-none focus:ring focus:ring-blue-300">
           {content}
+        </button>
+      )}
+      {isModalButton && (
+        <button
+          className="flex flex-row justify-center items-center"
+          onClick={toggleModal}
+        >
+          <IoIosGlobe size={30} />
+          {isChevronDownAvailable && <GoChevronDown />}
         </button>
       )}
     </li>

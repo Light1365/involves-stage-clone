@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import LpBody from "@/components/page-body/lp-body";
 import BrandLogosSection from "@/components/page-body/brand-logos-section";
 import HeaderPrimaryDropdown from "@/components/header/nav/li/dropdown-menu";
+import LanguageModal from "@/components/header/nav/language-modal";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header></Header>
       <LpBody></LpBody>
       <BrandLogosSection></BrandLogosSection>
+      <LanguageModal />
     </main>
   );
 }

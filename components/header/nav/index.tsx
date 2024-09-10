@@ -27,6 +27,8 @@ const HeaderNav = () => {
     {
       content: <IoIosGlobe size={30}/>,
       isChevronDownAvailable: true,
+      isModalButton: true,
+      isLinkAvailable: false
     },
     {
       content: "Demonstração",
