@@ -6,11 +6,14 @@ const LanguageModal = () => {
       content1: "Português",
     },
     {
-      content1: "Inglês",
+      content2: "Inglês",
+    },
+    {
+      content3: "Espanhol",
     },
   ];
   return (
-    <div className="max-[1020px]:hidden w-36 h-40 absolute left-0 top-24 shadow-xl cursor-default">
+    <div className="bg-white h-42 max-[1020px]:hidden w-36 absolute right-52 top-24 shadow-xl cursor-default shadow-md border border-slate-300 rounded-lg">
       {languageModalContent.map((item, index) => {
         return <LanguageModalContent {...item} key={index} />;
       })}

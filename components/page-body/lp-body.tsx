@@ -1,32 +1,47 @@
 import LpDashboard from "./lp-dashboard-image";
 import BrandsLogos from "./brand-logos";
+import LpContent, { LpInterface } from "./page-content";
+import Image from "next/image";
+
+const imgUrl = "";
 
 const LpBody = () => {
+  const lpContent: LpInterface[] = [
+    {
+      title: true,
+      content:
+        "A solução completa para execução, gestão e inteligência em trade marketing",
+    },
+    {
+      subtitle: true,
+      isLinkAvailable: true,
+    },
+    {
+      bodyText: true,
+      content: "testandoooooooooooooo",
+    },
+    {
+      content: "Link",
+      isLinkAvailable: true,
+    },
+    {
+      subtitle: true,
+      content: "TESTEEE",
+    },
+    {
+      content: "BOTÃO",
+      isButton: true,
+    },
+    {
+      hasImage: true,
+      imageSource: "https://bpone.group/img/LogoClientes/ambev.png",
+    },
+  ];
   return (
-    <div className="max-w-screen">
-      <h1 className="flex flex-row justify-start text-5xl font-bold ml-48 mr-48">
-        A solução completa para execução, gestão e inteligência em trade
-        marketing
-      </h1>
-      <div className="text-balance text-black ml-48 mt-4 mr-48 h-48">
-        <h2 className="mb-8">
-          Tudo que você precisa para dar um show de sellout em um único lugar.
-          Tecnologia e inteligência para gestão de pontos de venda e gestão
-          estratégica. Acompanhe sua equipe e indicadores com precisão, aumente
-          a produtividade e reduza custos com o Involves Stage.
-        </h2>
-        <a className="text-white font-bold bg-blue-400 w-full rounded-md p-1">
-          Gere resultado e mais sell-out no fim do dia e não apenas no fim do
-          mês.
-        </a>
-      </div>
-      <div>
-        {" "}
-        <button className="lp-diag-button">Solicitar diagnóstico</button>
-      </div>
-      <div className="bg-yellow-500 w-full">
-        <LpDashboard />
-      </div>
+    <div className="max-w-screen max-h-screen flex flex-col">
+      {lpContent.map((item, index) => {
+        return <LpContent {...item} key={index} />;
+      })}
     </div>
   );
 };

@@ -1,12 +1,11 @@
 "use client";
+
 import { GoChevronDown } from "react-icons/go";
 import { useState } from "react";
-import HeaderPrimaryDropdown from "./dropdown-menu";
 import { IoIosGlobe } from "react-icons/io";
-import LanguageModal from "../language-modal";
+import LanguageModal from "@/components/header/nav/language-modal";
 
-export interface LiInterface {
-  //define os tipos de valores aceitos por cada prop
+export interface ShortLiInterface {
   isDropdownButton?: boolean;
   isLinkAvailable?: boolean;
   content: any;
@@ -16,16 +15,15 @@ export interface LiInterface {
   isModalButton?: boolean;
 }
 
-const HeaderNavLi = ({
-  //define os valores iniciais de cada prop
+const ShortHeaderNavLi = ({
+  isDropdownButton = false,
   isLinkAvailable = true,
   content,
   isChevronDownAvailable = false,
   isButtonAvailable = false,
   chevronGap = 0,
-  isDropdownButton = false,
   isModalButton = false,
-}: LiInterface) => {
+}: ShortLiInterface) => {
   const [isOpen, setIsOpen] = useState(false);
   function toggleDropdown() {
     setIsOpen((isOpen) => !isOpen);
@@ -35,12 +33,11 @@ const HeaderNavLi = ({
   function toggleModal() {
     setIsModalOpen((isModalOpen) => !isModalOpen);
   }
-
   return (
     <li>
       {isDropdownButton && (
         <button className="flex flex-row items-center" onClick={toggleDropdown}>
-          {isOpen ? <HeaderPrimaryDropdown /> : null}
+          {/* {isOpen ? <HeaderPrimaryDropdown /> : null} */}
           {content}
           {isChevronDownAvailable && (
             <GoChevronDown
@@ -64,7 +61,7 @@ const HeaderNavLi = ({
         </a>
       )}
       {isButtonAvailable && (
-        <button className="h-11 font-bold bg-blue-500 pl-10 pr-10 rounded-full text-white hover:bg-blue-900 hover:ease-in-out duration-300 focus:outline-none focus:ring focus:ring-blue-300">
+        <button className="h-11 w-full font-bold bg-white pl-10 pr-10 rounded-full text-blue-500 hover:ease-in-out duration-300 focus:outline-none focus:ring focus:ring-blue-300">
           {content}
         </button>
       )}
@@ -82,4 +79,4 @@ const HeaderNavLi = ({
   );
 };
 
-export default HeaderNavLi;
+export default ShortHeaderNavLi;

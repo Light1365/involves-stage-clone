@@ -3,20 +3,20 @@ import HeaderPrimaryDropdownContent, { DropdownInterface } from "./content";
 const HeaderPrimaryDropdown = () => {
   const headerPrimaryDropdownContent: DropdownInterface[] = [
     {
-      content1: "Como funciona o Involves Stage",
-      subcontent1:
+      title: true,
+      content:
         "Veja como otimizar o trabalho das equipes de campo e back office",
-      content2: "TESTE5",
-      subcontent2: "AGORA FOI",
+      subtitle: true,
+      subtitleContent: "testeaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaa",
       redirectLink: "contact",
     },
     {
-      content1: "TESTE2",
-      subcontent1:
+      title: true,
+      content:
         "rumo à vitória, de encontro com a glória, vivendo o agora, isso já é história",
-      content2: "TESTE6",
-      subcontent2:
-        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      subtitle: true,
+      subtitleContent:
+        "rumo à vitória, de encontro com a glória, vivendo o agora, isso já é história",
       redirectLink: "",
     },
   ];
@@ -26,16 +26,6 @@ const HeaderPrimaryDropdown = () => {
         return <HeaderPrimaryDropdownContent {...item} key={index} />;
       })}
     </div>
-
-    // <div className="w-full bg-blue-400 h-80 block max-[1020px]:hidden absolute top-24">
-    //   <a className="text-white flex flex-column font-bold pt-10 ml-28">TESTE</a>
-    //   <a className="text-white opacity-70 ml-28 mt-2">TESTE2</a>
-
-    //   <div>
-    //   <a className="text-white flex flex-column font-bold pt-10 ml-28">TESTE3</a>
-    //   <a className="text-white opacity-70 ml-28 mt-2">TESTE4</a>
-    //   </div>
-    // </div>
   );
 };
 export default HeaderPrimaryDropdown;
