@@ -38,7 +38,7 @@ const ShortHeaderNavLi = ({
     setIsModalOpen((isModalOpen) => !isModalOpen);
   }
   return (
-    <li>
+    <li className="font-semibold font-sans">
       {isDropdownButton && (
         <div className="w-full">
           <button

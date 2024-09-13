@@ -36,7 +36,7 @@ const ShortHeaderPrimaryDropdownContent = ({
       {title && (
         <a
           href={redirectLink}
-          className="text-wrap mt-6 justify-start w-full text-start text-white font-bold text-wrap"
+          className="text-wrap mt-6 justify-start w-96 text-start text-white font-bold text-wrap"
         >
           {content}
         </a>
@@ -45,7 +45,7 @@ const ShortHeaderPrimaryDropdownContent = ({
       {subtitle && (
         <a
           href={redirectLink}
-          className="text-wrap flex flex-column text-stone-300 text-start"
+          className="text-wrap flex flex-column text-white opacity-60 text-start w-96"
         >
           {subtitleContent}
         </a>
@@ -62,7 +62,7 @@ const ShortHeaderPrimaryDropdownContent = ({
       {subtitle2 && (
         <a
           href={redirectLink}
-          className="text-wrap flex flex-column pt-1 text-stone-300 text-start"
+          className="text-wrap flex flex-column pt-1 text-white opacity-60 text-start"
         >
           {subtitleContent2}
         </a>
@@ -79,7 +79,7 @@ const ShortHeaderPrimaryDropdownContent = ({
       {subtitle3 && (
         <a
           href={redirectLink}
-          className="text-wrap flex flex-column pt-1 text-stone-300 text-start"
+          className="text-wrap flex flex-column pt-1 text-white opacity-60 text-start"
         >
           {subtitleContent3}
         </a>

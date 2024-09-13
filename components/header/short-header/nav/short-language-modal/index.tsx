@@ -5,7 +5,7 @@ import ShortLanguageModalContent, {
 const ShortLanguageModal = () => {
   const shortLanguageModalContent: ShortLanguageModalInterface[] = [
     {
-      language: "Português",
+      language: "Português (BR)",
     },
     {
       language: "English",
