@@ -10,7 +10,7 @@ export default function Home() {
     <main className=" text-black bg-white flex min-h-screen flex-col items-center justify-between w-full h-full">
       <Header></Header>
       {/* <HeaderPrimaryDropdown /> */}
-      <LpBody></LpBody>
+      {/* <LpBody></LpBody> */}
       <ChatIcon />
       <div>{/* <BrandLogosSection></BrandLogosSection> */}</div>
     </main>
