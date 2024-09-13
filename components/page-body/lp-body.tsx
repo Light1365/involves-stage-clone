@@ -13,32 +13,28 @@ const LpBody = () => {
         "A solução completa para execução, gestão e inteligência em trade marketing",
     },
     {
-      subtitle: true,
-      isLinkAvailable: true,
-    },
-    {
       bodyText: true,
       content: "testandoooooooooooooo",
     },
-    {
-      content: "Link",
-      isLinkAvailable: true,
-    },
-    {
-      subtitle: true,
-      content: "TESTEEE",
-    },
-    {
-      content: "BOTÃO",
-      isButton: true,
-    },
-    {
-      hasImage: true,
-      imageSource: "https://bpone.group/img/LogoClientes/ambev.png",
-    },
+    // {
+    //   content: "Link",
+    //   isLinkAvailable: true,
+    // },
+    // {
+    //   subtitle: true,
+    //   content: "TESTEEE",
+    // },
+    // {
+    //   content: "BOTÃO",
+    //   isButton: true,
+    // },
+    // {
+    //   hasImage: true,
+    //   imageSource: "https://bpone.group/img/LogoClientes/ambev.png",
+    // },
   ];
   return (
-    <div className="max-w-screen max-h-screen flex flex-col">
+    <div className="max-w-screen w-full max-h-screen h-screen flex flex-row">
       {lpContent.map((item, index) => {
         return <LpContent {...item} key={index} />;
       })}

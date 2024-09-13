@@ -12,7 +12,7 @@ const LanguageModalContent = ({
   content3,
 }: LanguageModalInterface) => {
   return (
-    <div className="cursor-pointer hover:bg-slate-200 h-14 rounded-md flex flex-row text-black justify-start items-center pl-7">
+    <div className="cursor-pointer hover:bg-slate-200 h-12 rounded-md flex flex-row text-black justify-start items-center pl-7">
       {content1}
       {content2}
       {content3}

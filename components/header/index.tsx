@@ -5,6 +5,7 @@ import HeaderNav from "@/components/header/nav";
 import HeaderNavLi from "./nav/li";
 import { LiInterface } from "./nav/li";
 import { useState } from "react";
+import ShortHeaderNav from "./short-header/nav";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +20,8 @@ const Header = () => {
         size={32}
         className="hidden max-[1020px]:block cursor-pointer"
         onClick={toggleShortDropdown}
-      />
-      {/* {isOpen ? <HeaderPrimaryDropdown /> : null} */}
+      />{" "}
+      {isOpen ? <ShortHeaderNav /> : null}
     </header>
   );
 };

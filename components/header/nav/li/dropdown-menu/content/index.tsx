@@ -16,7 +16,7 @@ const HeaderPrimaryDropdownContent = ({
   redirectLink,
 }: DropdownInterface) => {
   return (
-    <div className="pl-28 z-50 cursor-default">
+    <div className="pl-20 z-50 cursor-default">
       {title && (
         <a
           href={redirectLink}

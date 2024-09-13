@@ -22,8 +22,8 @@ const LpContent = ({
   imageSource = false,
 }: LpInterface) => {
   return (
-    <div className="max-w-screen max-h-screen w-screen bg-green-500">
-      {title && <h1 className="bg-red-500">{content}</h1>}
+    <div className="w-screen h-96 max-h-screen bg-green-500">
+      {title && <h1 className="bg-red-500 text-black font-bold text-balance p-24">{content}</h1>}
       {subtitle && <h2 className="bg-purple-500">{content}</h2>}
       {bodyText && <h3 className="bg-orange-500">{content}</h3>}
       {isLinkAvailable && (

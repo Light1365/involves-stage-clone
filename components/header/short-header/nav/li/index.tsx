@@ -4,6 +4,10 @@ import { GoChevronDown } from "react-icons/go";
 import { useState } from "react";
 import { IoIosGlobe } from "react-icons/io";
 import LanguageModal from "@/components/header/nav/language-modal";
+import ShortHeaderNav from "..";
+import { PiHamburger } from "react-icons/pi";
+import ShortHeaderPrimaryDropdown from "../short-dropdown-menu";
+import ShortLanguageModal from "../short-language-modal";
 
 export interface ShortLiInterface {
   isDropdownButton?: boolean;
@@ -36,18 +40,24 @@ const ShortHeaderNavLi = ({
   return (
     <li>
       {isDropdownButton && (
-        <button className="flex flex-row items-center" onClick={toggleDropdown}>
-          {/* {isOpen ? <HeaderPrimaryDropdown /> : null} */}
-          {content}
-          {isChevronDownAvailable && (
-            <GoChevronDown
-              style={{
-                marginLeft: chevronGap,
-              }}
-            />
-          )}
-        </button>
+        <div className="w-full">
+          <button
+            className="flex flex-column items-center"
+            onClick={toggleDropdown}
+          >
+            {content}
+            {isChevronDownAvailable && (
+              <GoChevronDown
+                style={{
+                  marginLeft: chevronGap,
+                }}
+              />
+            )}
+          </button>
+          {isOpen ? <ShortHeaderPrimaryDropdown /> : null}
+        </div>
       )}
+
       {isLinkAvailable && (
         <a href="" className="flex flex-row items-center">
           {content}
@@ -70,11 +80,11 @@ const ShortHeaderNavLi = ({
           className="flex flex-row justify-center items-center"
           onClick={toggleModal}
         >
-          {isModalOpen ? <LanguageModal /> : null}
           <IoIosGlobe size={30} />
           {isChevronDownAvailable && <GoChevronDown />}
         </button>
       )}
+      {isModalOpen ? <ShortLanguageModal /> : null}
     </li>
   );
 };

@@ -37,7 +37,7 @@ const HeaderNavLi = ({
   }
 
   return (
-    <li>
+    <li className="font-sans font-medium">
       {isDropdownButton && (
         <button className="flex flex-row items-center" onClick={toggleDropdown}>
           {isOpen ? <HeaderPrimaryDropdown /> : null}

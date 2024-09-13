@@ -37,7 +37,7 @@ const ShortHeaderNav = () => {
     },
   ];
   return (
-    <ul className="flex flex-col gap-6 min-[1020px]:hidden justify-center bg-blue-500 text-white w-full pt-6 pb-6 pl-10 pr-10">
+    <ul className="absolute top-24 left-0 flex flex-col gap-6 min-[1020px]:hidden justify-center bg-blue-500 text-white w-full pt-6 pb-6 pl-10 pr-10">
       {navItems.map((item, index) => {
         return <ShortHeaderNavLi {...item} key={index} />;
       })}
