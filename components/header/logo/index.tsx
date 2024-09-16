@@ -9,7 +9,7 @@ const HeaderLogo = () => {
       <Image
         src={bpFullLogo}
         alt="header-logo"
-        className=""
+        className="hover:scale-110 transition ease-in-out"
         style={{
           width: 125,
           height: 75,

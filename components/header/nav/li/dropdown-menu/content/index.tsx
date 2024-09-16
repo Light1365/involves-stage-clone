@@ -60,7 +60,7 @@ const HeaderPrimaryDropdownContent = ({
       {title2 && (
         <a
           href={redirectLink}
-          className="text-wrap mt-5 justify-start flex flex-column w-full text-white font-bold"
+          className="text-wrap justify-start flex flex-column w-full text-white font-bold"
         >
           {content2}
         </a>
@@ -92,7 +92,7 @@ const HeaderPrimaryDropdownContent = ({
       {title4 && (
         <a
           href={redirectLink}
-          className="text-wrap mt-5 justify-start flex flex-column w-full text-white font-bold"
+          className="text-wrap justify-start flex flex-column w-full text-white font-bold"
         >
           {content4}
         </a>

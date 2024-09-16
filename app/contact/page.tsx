@@ -11,7 +11,6 @@ export default function Home() {
       <Header></Header>
       {/* <HeaderPrimaryDropdown /> */}
       {/* <LpBody></LpBody> */}
-      <ChatIcon />
       <div>{/* <BrandLogosSection></BrandLogosSection> */}</div>
     </main>
   );

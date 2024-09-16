@@ -28,6 +28,14 @@ const ShortHeaderPrimaryDropdown = () => {
         "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mattis risus. Fusce pulvinar a risus sit amet semper. Nullam tincidunt vel nisi at sodales. Ut ut turpis a dolor ultrices fringilla et quis orci. Integer pellentesque, augue vel efficitur.",
       redirectLink: "",
     },
+    {
+      title3: true,
+      content3: "Título 4",
+      subtitle3: true,
+      subtitleContent3:
+        "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mattis risus. Fusce pulvinar a risus sit amet semper. Nullam tincidunt vel nisi at sodales. Ut ut turpis a dolor ultrices fringilla et quis orci. Integer pellentesque, augue vel efficitur.",
+      redirectLink: "",
+    },
   ];
   return (
     <div className="min-[1020px]:hidden bg-blue-500 cursor-default">
