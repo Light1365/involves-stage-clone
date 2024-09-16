@@ -14,9 +14,10 @@ export interface FooterLiInterface {
   redirectLink4?: any;
   redirectLink5?: any;
   redirectLink6?: any;
+  redirect2Link?: any;
   listTitle?: any;
   list2Title?: any;
-  listContent?: any;
+  listContent1?: any;
   listContent2?: any;
   listContent3?: any;
   listContent4?: any;
@@ -24,6 +25,7 @@ export interface FooterLiInterface {
   listContent6?: any;
   list2Content?: any;
   isLogoAvailable?: boolean;
+  underFootContent1?: any;
 }
 
 const FooterNavLi = ({
@@ -36,9 +38,10 @@ const FooterNavLi = ({
   redirectLink4,
   redirectLink5,
   redirectLink6,
+  redirect2Link,
   listTitle,
   list2Title,
-  listContent,
+  listContent1,
   listContent2,
   listContent3,
   listContent4,
@@ -46,6 +49,7 @@ const FooterNavLi = ({
   listContent6,
   list2Content,
   isLogoAvailable = false,
+  underFootContent1,
 }: FooterLiInterface) => {
   return (
     <li className="font-sans font-medium text-white pl-20 pr-10">
@@ -57,8 +61,8 @@ const FooterNavLi = ({
       )}
       {listTitle && (
         <h1 className="flex flex-col opacity-60 font-normal pt-1 text-pretty w-20 text-sm">
-          <a href={redirectLink1} className="mt-4">
-            {listContent}
+          <a href={redirectLink1} target="_blank" className="mt-4">
+            {listContent1}
           </a>
           <a href={redirectLink2} className="mt-4">
             {listContent2}
@@ -78,9 +82,15 @@ const FooterNavLi = ({
         </h1>
       )}
       {list2Title && (
-        <h1 className="flex flex-col opacity-60 font-normal pt-1 text-pretty w-20 text-sm">
-          <a>{list2Content}</a>
+        <h1 className="flex flex-col font-normal pt-1 text-pretty w-20 text-sm">
+          <a className="text-base text-white opacity-100">{list2Title}</a>
+          <a href={redirect2Link} className="mt-4 opacity-60">
+            {list2Content}
+          </a>
         </h1>
+      )}
+      {underFootContent1 && (
+        <a className="flex flex-row opacity-60 font-normal pt-1 text-pretty w-20 text-sm"></a>
       )}
     </li>
   );

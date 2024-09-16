@@ -1,21 +1,15 @@
-import footerBpFullLogo from "@public/images/bp-full-white-logo.png";
-import Image from "next/image";
-
 const FooterLogo = () => {
-  const imgUrl = "";
+  const imgUrl = "https://bpone.group/img/BpFull/Bp-Full-Logo.webp";
 
   return (
     <div>
-      <Image
-        src={imgUrl}
-        alt="footer-logo"
-        className=""
-        width={10}
-        height={10}
-        style={{
-          objectFit: "contain",
-        }}
-      />
+      <div className="flex justify-start items-center mt-1 w-28">
+        <img
+          src={imgUrl}
+          alt="footer-logo"
+          className=""
+        ></img>
+      </div>
     </div>
   );
 };

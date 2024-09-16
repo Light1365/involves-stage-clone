@@ -10,12 +10,13 @@ const FooterNav = () => {
     },
     {
       listTitle: "BRASIL / Sede",
-      listContent:
+      listContent1:
         "Rua Joaquim Antônio Nascimento, 206 - Jardim Canadá, Ribeirão Preto - SP, 14024-180",
+      redirectLink1: "https://maps.app.goo.gl/Ufb8Qj48he6hPTgv5",
     },
     {
       listTitle: "BP Full",
-      listContent: "E-Commerce",
+      listContent1: "E-Commerce",
       listContent2: "Nossos produtos",
       listContent3: "Trabalhe conosco",
       redirectLink1: "home",
@@ -24,7 +25,7 @@ const FooterNav = () => {
     },
     {
       listTitle: "Soluções",
-      listContent: "Como funciona o E-commerce",
+      listContent1: "Como funciona o E-commerce",
       listContent2: "Metodologia BP Full",
       listContent3: "Data Analytics",
       listContent4: "Loja perfeita",
@@ -37,28 +38,27 @@ const FooterNav = () => {
     },
     {
       listTitle: "Empresa",
-      listContent: "Quem somos",
+      listContent1: "Quem somos",
       listContent2: "Carreira",
       listContent3: "Contato",
+      redirectLink1: "A",
+      redirectLink2: "B",
+      redirectLink3: "C",
 
       list2Title: "Imprensa",
       list2Content: "bpone.group",
+      redirect2Link: "home",
     },
   ];
 
   return (
     <div className="w-full items-center flex flex-col">
-      <ul className="bg-blue-800 w-full h-full flex flex-row pt-20 pb-10 justify-center max-[1020px]:hidden">
+      <ul className="bg-blue-900 w-full h-full flex flex-row pt-20 pb-10 justify-center max-[1020px]:hidden">
         {navItems.map((item, index) => {
           return <FooterNavLi {...item} key={index} />;
         })}
       </ul>
       <div className="w-9/12 h-2 bg-red-500 max-[1300px]:w-11/12 max-[1020px]:hidden"></div>
-      <ul className="bg-red-800 w-full h-full flex flex-row pt-20 justify-center max-[1020px]:hidden">
-        {navItems.map((item, index) => {
-          return <FooterNavLi {...item} key={index} />;
-        })}
-      </ul>
     </div>
   );
 };
