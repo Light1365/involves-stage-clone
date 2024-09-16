@@ -4,6 +4,8 @@ import LpBody from "@/components/page-body/lp-body";
 import BrandLogosSection from "@/components/page-body/brand-logos-section";
 import HeaderPrimaryDropdown from "@/components/header/nav/li/dropdown-menu";
 import ChatIcon from "@/components/page-body/chat-icon";
+import FooterNavLi from "@/components/footer/nav/li";
+import FooterNav from "@/components/footer/nav";
 
 export default function Home() {
   return (
@@ -12,7 +14,8 @@ export default function Home() {
       {/* <HeaderPrimaryDropdown /> */}
       {/* <LpBody></LpBody> */}
       <ChatIcon />
-      <div>{/* <BrandLogosSection></BrandLogosSection> */}</div>
+      {/* <BrandLogosSection></BrandLogosSection> */}
+      <FooterNav />
     </main>
   );
 }

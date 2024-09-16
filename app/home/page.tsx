@@ -6,6 +6,7 @@ import HeaderPrimaryDropdown from "@/components/header/nav/li/dropdown-menu";
 import LanguageModal from "@/components/header/nav/language-modal";
 import ShortHeaderNav from "@/components/header/short-header/nav";
 import ShortLanguageModal from "@/components/header/short-header/nav/short-language-modal";
+import FooterNav from "@/components/footer/nav";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Header></Header>
       <LpBody></LpBody>
       {/* <BrandLogosSection></BrandLogosSection> */}
+      <FooterNav />
     </main>
   );
 }
