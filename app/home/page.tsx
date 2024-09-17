@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import LpBody from "@/components/page-body/lp-body";
 import FooterNav from "@/components/footer/nav";
 import ChatIcon from "@/components/page-body/chat-icon";
+import FormNav from "@/components/footer/form";
 
 export default function Home() {
   return (

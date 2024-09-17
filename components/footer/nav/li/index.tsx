@@ -25,7 +25,6 @@ export interface FooterLiInterface {
   listContent6?: any;
   list2Content?: any;
   isLogoAvailable?: boolean;
-  underFootContent1?: any;
 }
 
 const FooterNavLi = ({
@@ -49,7 +48,6 @@ const FooterNavLi = ({
   listContent6,
   list2Content,
   isLogoAvailable = false,
-  underFootContent1,
 }: FooterLiInterface) => {
   return (
     <li className="font-sans font-medium text-white pl-20 pr-10">
@@ -82,15 +80,12 @@ const FooterNavLi = ({
         </h1>
       )}
       {list2Title && (
-        <h1 className="flex flex-col font-normal pt-1 text-pretty w-20 text-sm">
+        <h1 className="flex flex-col font-medium pt-1 text-pretty w-20 text-sm">
           <a className="text-base text-white opacity-100">{list2Title}</a>
-          <a href={redirect2Link} className="mt-4 opacity-60">
+          <a href={redirect2Link} className="mt-4 opacity-60 font-normal">
             {list2Content}
           </a>
         </h1>
-      )}
-      {underFootContent1 && (
-        <a className="flex flex-row opacity-60 font-normal pt-1 text-pretty w-20 text-sm"></a>
       )}
     </li>
   );

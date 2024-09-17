@@ -2,6 +2,7 @@ import { GoChevronDown } from "react-icons/go";
 import { IoIosGlobe } from "react-icons/io";
 import { useState } from "react";
 import FooterNavLi, { FooterLiInterface } from "./li";
+import FormNav from "../form";
 
 const FooterNav = () => {
   const navItems: FooterLiInterface[] = [
@@ -53,12 +54,14 @@ const FooterNav = () => {
 
   return (
     <div className="w-full items-center flex flex-col">
-      <ul className="bg-blue-900 w-full h-full flex flex-row pt-20 pb-10 justify-center max-[1020px]:hidden">
+      <FormNav />
+      <ul className="bg-blue-900 w-full flex flex-row pt-20 pb-10 justify-center max-[1020px]:hidden">
         {navItems.map((item, index) => {
           return <FooterNavLi {...item} key={index} />;
         })}
       </ul>
-      <div className="w-9/12 h-2 bg-red-500 max-[1300px]:w-11/12 max-[1020px]:hidden"></div>
+      <div className="w-8/12 h-1 bg-red-500 max-[1300px]:w-11/12 max-[1020px]:hidden"></div>
+      <ul className="w-full bg-blue-900 h-28"></ul>
     </div>
   );
 };
