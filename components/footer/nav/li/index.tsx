@@ -50,7 +50,7 @@ const FooterNavLi = ({
   isLogoAvailable = false,
 }: FooterLiInterface) => {
   return (
-    <li className="font-sans font-medium text-white pl-20 pr-10">
+    <li className="font-sans font-medium text-white pl-10 pr-10">
       {isLogoAvailable && <FooterLogo />}
       {isLinkAvailable && (
         <a href={redirectLink} className="">

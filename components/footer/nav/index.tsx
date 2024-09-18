@@ -53,7 +53,7 @@ const FooterNav = () => {
   ];
 
   return (
-    <div className="w-full items-center flex flex-col">
+    <div className="w-full items-center flex flex-col max-[1020px]:hidden">
       <FormNav />
       <ul className="bg-blue-900 w-full flex flex-row pt-20 pb-10 justify-center max-[1020px]:hidden">
         {navItems.map((item, index) => {
@@ -65,5 +65,4 @@ const FooterNav = () => {
     </div>
   );
 };
-
 export default FooterNav;
