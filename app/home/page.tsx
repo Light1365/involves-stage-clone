@@ -4,6 +4,7 @@ import LpBody from "@/components/page-body/lp-body";
 import FooterNav from "@/components/footer/nav";
 import ChatIcon from "@/components/page-body/chat-icon";
 import FormNav from "@/components/footer/form";
+import ShortFooterNav from "@/components/footer/short-footer/nav";
 
 export default function Home() {
   return (

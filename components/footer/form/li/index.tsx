@@ -5,6 +5,8 @@ import { IoIosGlobe } from "react-icons/io";
 
 export interface FormInterface {
   //define os tipos de valores aceitos por cada prop
+  formTitle?: boolean;
+  formTitleContent?: any;
   nameField?: boolean;
   nameFieldTitle?: any;
   emailField?: boolean;
@@ -25,6 +27,8 @@ export interface FormInterface {
 }
 
 const FormFields = ({
+  formTitle = false,
+  formTitleContent,
   nameField = false,
   nameFieldTitle,
   emailField = false,
@@ -46,9 +50,12 @@ const FormFields = ({
 
 FormInterface) => {
   return (
-    <div className="flex flex-row justify-center">
+    <div className="flex items-center flex-col">
+        {formTitle && (<h1 className="pb-10 w-full max-w-lg text-wrap justify-center flex font-sans text-white opacity-70 text-center text-3xl">{formTitleContent}</h1>)}
+    <div className="flex flex-col items-center justify-center">
       <li className="bg-white max-w-screen rounded-2xl w-4/12 justify-center font-sans font-normal text-black pl-16 pr-16">
         {nameField && (
+            
           <div>
             <h1 className="pt-6 font-sans">{nameFieldTitle}</h1>
             <input className="bg-white border-b border-gray-300 focus:outline-none rounded-full w-full pl-3"></input>
@@ -98,6 +105,7 @@ FormInterface) => {
         )}
        
       </li>
+    </div>
     </div>
   );
 };

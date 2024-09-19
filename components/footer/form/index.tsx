@@ -6,6 +6,8 @@ import FormFields, { FormInterface } from "./li";
 const FormNav = () => {
   const navItems: FormInterface[] = [
     {
+      formTitle: true,
+      formTitleContent: "Preencha os campos abaixo e solicite agora um diagnóstico da sua operação:",
       nameField: true,
       nameFieldTitle: "Nome",
       emailField: true,
@@ -20,7 +22,7 @@ const FormNav = () => {
       isTermsText: true,
       isTermsTextContent: "A BP Full está comprometida em proteger e respeitar a sua privacidade e tratará seus dados pessoais de acordo com a nossa Política de Privacidade.",
       isTermsCheckbox: true,
-      isTermCheckboxText: "Confirmo que li e aceito os termos da Política de Privacidade e que estou ciente de que irei receber conteúdos e ofertas da Involves via e-mail, podendo me descadastrar dessa comunicação a qualquer momento."
+      isTermCheckboxText: "Confirmo que li e aceito os termos da Política de Privacidade e que estou ciente de que irei receber conteúdos e ofertas da BP Full via e-mail, podendo me descadastrar dessa comunicação a qualquer momento."
     },
   ];
 
