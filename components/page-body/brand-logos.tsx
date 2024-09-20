@@ -3,7 +3,7 @@ const BrandsLogos = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center mt-1">
+      <div className="flex flex-row justify-around items-center">
         <img
           src={imgUrl}
           alt="ambev-logo"
