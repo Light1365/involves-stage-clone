@@ -92,12 +92,12 @@ FormInterface) => {
           </div>
         )}
         {isTermsText && (
-            <h1 className="font-sans pt-6 opacity-90 text-balance text-sm">{isTermsTextContent}</h1>
+            <h1 className="font-sans pt-6 text-sm">{isTermsTextContent}</h1>
         )}
          {isTermsCheckbox && (
-            <div className="flex flex-row pt-5 text-balance items-start text-sm">
+            <div className="flex flex-row pt-5 items-start text-sm">
             <input type="checkbox" className="mt-1 mr-1"></input>
-            <h1>{isTermCheckboxText}</h1>
+            <h1 className="text-wrap">{isTermCheckboxText}</h1>
 </div>
         )}
         {isSubmitButton && (

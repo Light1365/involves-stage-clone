@@ -12,39 +12,33 @@ const UnderFooterNav = () => {
   const navItems: UnderFooterLiInterface[] = [
     {
       privacyPolicy: true,
-      privacyPolicyContent: "Política de Privacidade"
+      privacyPolicyContent: "Política de Privacidade",
     },
-   {
-    language:true,
-    languageContent: "Português (BR)",
-    redirectLink: "",
-   },
-   {
-    language:true,
-    languageContent: "English",
-    redirectLink: "",
-   },
-   {
-    language:true,
-    languageContent: "Español",
-    redirectLink: "",
-   },
-   {
-    isSocialMediaIcon: true,
-    isSocialMediaIconSource: "{FaSquareFacebook}",
-   },
-   {
-    copyright: true,
-   },
+    {
+      language: true,
+      languageContent: "Português (BR)",
+      redirectLink: "",
+      language2: true,
+      languageContent2: "English",
+      language3: true,
+      languageContent3: "Español",
+    },
 
+    {
+      isSocialMediaIcon: true,
+      isSocialMediaIconSource: "{FaSquareFacebook}",
+    },
+    {
+      copyright: true,
+    },
   ];
 
   return (
-      <ul className="bg-blue-900 w-full flex flex-row justify-around items-center pl-40 mr-40 max-[1020px]:hidden">
-        {navItems.map((item, index) => {
-          return <UnderFooterNavLi {...item} key={index} />;
-        })}
-      </ul>
+    <ul className="bg-blue-900 w-full flex flex-row items-center pl-40 mr-40 max-[1020px]:hidden">
+      {navItems.map((item, index) => {
+        return <UnderFooterNavLi {...item} key={index} />;
+      })}
+    </ul>
   );
 };
 export default UnderFooterNav;
