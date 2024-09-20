@@ -17,7 +17,10 @@ export interface UnderFooterLiInterface {
   languageContent2?: any;
   languageContent3?: any;
   isSocialMediaIcon?: boolean;
-  isSocialMediaIconSource?: any;
+  isSocialMediaRedirectLink?: any;
+  isSocialMediaRedirectLink2?: any;
+  isSocialMediaRedirectLink3?: any;
+  isSocialMediaRedirectLink4?: any;
   redirectLink?: any;
   copyright?: boolean;
 }
@@ -33,17 +36,22 @@ const UnderFooterNavLi = ({
   languageContent2,
   languageContent3,
   isSocialMediaIcon = false,
-  isSocialMediaIconSource,
+  isSocialMediaRedirectLink,
+  isSocialMediaRedirectLink2,
+  isSocialMediaRedirectLink3,
+  isSocialMediaRedirectLink4,
   redirectLink,
   copyright = false,
 }: UnderFooterLiInterface) => {
   return (
     <li className="font-sans text-sm text-white w-full opacity-60">
-      <div>
+      <div className="flex flex-row justify-center">
         {privacyPolicy && (
-          <a href="" className="flex flex-row items-start justify-center mr-7">
-            {privacyPolicyContent}
-          </a>
+          <div className="">
+            <a href="" className="flex flex-row items-start justify-center">
+              {privacyPolicyContent}
+            </a>
+          </div>
         )}
       </div>
       <div className="flex flex-row gap-6 justify-end">
@@ -65,16 +73,16 @@ const UnderFooterNavLi = ({
       </div>
       {isSocialMediaIcon && (
         <div className="flex flex-row justify-end gap-2 items-center w-3/4">
-          <a href="">
+          <a href={isSocialMediaRedirectLink}>
             <FaSquareFacebook />
           </a>
-          <a href="">
+          <a href={isSocialMediaRedirectLink2}>
             <FaInstagram />
           </a>
-          <a href="">
+          <a href={isSocialMediaRedirectLink3}>
             <FaLinkedinIn />
           </a>
-          <a href="">
+          <a href={isSocialMediaRedirectLink4}>
             <FaYoutube />
           </a>
         </div>

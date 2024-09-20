@@ -1,9 +1,8 @@
-import { GoChevronDown } from "react-icons/go";
-import { IoIosGlobe } from "react-icons/io";
 import { useState } from "react";
 import FooterNavLi, { FooterLiInterface } from "./li";
 import FormNav from "../form";
 import ShortFooterNav from "../short-footer/nav";
+import darkBackground from "../../../public/images/dark-background.png";
 
 const FooterNav = () => {
   const navItems: FooterLiInterface[] = [
@@ -61,9 +60,10 @@ const FooterNav = () => {
           return <FooterNavLi {...item} key={index} />;
         })}
       </ul>
-      <div className="w-full pl-1 pr-1 h-1 bg-gradient-to-r from-blue-900 via-cyan-500 to-blue-900 max-[1020px]:hidden"></div>
-      <ul className="w-full bg-blue-900 h-28 flex flex-row justify-start items-center"><ShortFooterNav/></ul>
-      
+      <div className="w-full pl-1 pr-1 h-px bg-gradient-to-r from-blue-900 via-cyan-500 to-blue-900 max-[1020px]:hidden"></div>
+      <ul className="w-full bg-blue-900 h-28 flex flex-row justify-start items-center">
+        <ShortFooterNav />
+      </ul>
     </div>
   );
 };

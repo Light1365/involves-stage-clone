@@ -26,7 +26,11 @@ const UnderFooterNav = () => {
 
     {
       isSocialMediaIcon: true,
-      isSocialMediaIconSource: "{FaSquareFacebook}",
+      isSocialMediaRedirectLink:
+        "https://www.facebook.com/bponegroup/?locale=pt_BR",
+      isSocialMediaRedirectLink2: "https://www.instagram.com/bponegroup/",
+      isSocialMediaRedirectLink3: "https://www.instagram.com/bponegroup/",
+      isSocialMediaRedirectLink4: "https://www.instagram.com/bponegroup/",
     },
     {
       copyright: true,

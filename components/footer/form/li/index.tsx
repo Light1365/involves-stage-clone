@@ -1,4 +1,5 @@
 "use client";
+import { url } from "inspector";
 import { useState } from "react";
 
 export interface FormInterface {
@@ -93,18 +94,21 @@ FormInterface) => {
             </div>
           )}
           {isTermsText && (
-            <h1 className="font-sans pt-6 opacity-90 text-balance text-sm">
+            <h1 className="font-sans pt-6 opacity-90 text-justify text-sm">
               {isTermsTextContent}
             </h1>
           )}
           {isTermsCheckbox && (
-            <div className="flex flex-row pt-5 text-balance items-start text-sm">
-              <input type="checkbox" className="mt-1 mr-1"></input>
+            <div className="flex flex-row pt-5 text-justify items-start text-sm">
+              <input
+                type="checkbox"
+                className="mt-1 mr-2 accent-blue-500 hover:accent-blue-700"
+              ></input>
               <h1>{isTermCheckboxText}</h1>
             </div>
           )}
           {isSubmitButton && (
-            <button className="h-10 w-20 bg-blue-500 text-white mt-10 mr-10 mb-10 font-sans">
+            <button className="h-10 w-20 bg-blue-500 text-white mt-10 mr-10 mb-10 font-sans rounded-md transition ease-in-out hover:bg-blue-900 hover:ring-2 focus:ring-2">
               Enviar
             </button>
           )}
