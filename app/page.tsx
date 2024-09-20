@@ -8,7 +8,7 @@ import ShortFooterNav from "@/components/footer/short-footer/nav";
 
 export default function Home() {
   return (
-    <main className=" text-black bg-white flex flex-col justify-between min-h-screen items-center max-w-screen h-full">
+    <main className="bg-white flex flex-col justify-between min-h-screen items-center max-w-screen ">
       <Header></Header>
       <LpBody></LpBody>
       <ChatIcon />
