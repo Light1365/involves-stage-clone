@@ -2,8 +2,6 @@
 import HeaderLogo from "@/components/header/logo";
 import { PiHamburger } from "react-icons/pi";
 import HeaderNav from "@/components/header/nav";
-import HeaderNavLi from "./nav/li";
-import { LiInterface } from "./nav/li";
 import { useState } from "react";
 import ShortHeaderNav from "./short-header/nav";
 
@@ -18,7 +16,7 @@ const Header = () => {
       <HeaderNav />
       <PiHamburger
         size={32}
-        className="hidden max-[1020px]:block cursor-pointer"
+        className="hidden max-[1024px]:block cursor-pointer"
         onClick={toggleShortDropdown}
       />{" "}
       {isOpen ? <ShortHeaderNav /> : null}
