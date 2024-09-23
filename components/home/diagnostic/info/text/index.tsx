@@ -5,7 +5,7 @@ const InfoText = () => {
         A solução completa para execução, gestão e inteligência em trade
         marketing
       </h1>
-      <h2 className="font-normal text-lg text-justify mt-10 text-black max-[450px]:text-md max-[450px]:mt-5">
+      <h2 className="font-normal text-lg text-justify mt-10 text-gray-500 max-[450px]:text-md max-[450px]:mt-5">
         1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in
         mattis risus. Fusce pulvinar a risus sit amet semper. Nullam tincidunt
         vel nisi at sodales. Ut ut turpis a dolor ultrices fringilla et quis
