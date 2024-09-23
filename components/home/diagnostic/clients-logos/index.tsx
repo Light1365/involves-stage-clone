@@ -21,6 +21,7 @@ const ClientsLogos = () => {
       {brandsLogosContent.map((image, index) => {
         return (
           <Image
+            key={index}
             alt="company-image"
             src={image}
             width={500}
