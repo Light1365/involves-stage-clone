@@ -4,7 +4,7 @@ import HomeComponent from "@/components/home";
 
 export default function Home() {
   return (
-    <main className="bg-slate-100 flex flex-col justify-between min-h-screen items-center max-w-screen ">
+    <main className="bg-white flex flex-col justify-between min-h-screen items-center max-w-screen ">
       <Header />
       <HomeComponent />
       <FooterNav />

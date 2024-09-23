@@ -1,3 +1,4 @@
+import { GoChevronDown } from "react-icons/go";
 import { IoIosGlobe } from "react-icons/io";
 import HeaderNavLi, { LiInterface } from "./li";
 import { useState } from "react";
@@ -37,7 +38,7 @@ const HeaderNav = () => {
   ];
 
   return (
-    <ul className="flex flex-row gap-6 max-[1024px]:hidden items-center">
+    <ul className="flex flex-row gap-6 max-[1020px]:hidden items-center">
       {navItems.map((item, index) => {
         return <HeaderNavLi {...item} key={index} />;
       })}

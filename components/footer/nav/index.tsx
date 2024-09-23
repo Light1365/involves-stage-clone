@@ -61,7 +61,10 @@ const FooterNav = () => {
           return <FooterNavLi {...item} key={index} />;
         })}
       </ul>
-      <div className="w-full pl-1 pr-1 h-1 bg-gradient-to-r from-blue-900 via-cyan-500 to-blue-900 max-[1020px]:hidden"></div>
+      <div
+        className="w-full pl-1 pr-1 bg-gradient-to-r from-blue-900 via-cyan-500 to-blue-900 max-[1020px]:hidden"
+        style={{ height: 1 }}
+      ></div>
       <ul className="w-full bg-blue-900 h-28 flex flex-row justify-start items-center">
         <ShortFooterNav />
       </ul>

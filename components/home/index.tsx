@@ -3,7 +3,7 @@ import InfoComponent from "./diagnostic/info";
 
 const HomeComponent = () => {
   return (
-    <div className="">
+    <div className="bg-slate-100">
       <InfoComponent />
       <ClientsLogos />
     </div>
