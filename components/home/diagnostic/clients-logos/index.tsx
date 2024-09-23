@@ -1,5 +1,4 @@
 "use client";
-import BrandLogosSection from "@/components/page-body/page-content/brands-section/brand-logos-section";
 import Image from "next/image";
 
 const ClientsLogos = () => {

@@ -2,8 +2,6 @@
 import HeaderLogo from "@/components/header/logo";
 import { PiHamburger } from "react-icons/pi";
 import HeaderNav from "@/components/header/nav";
-import HeaderNavLi from "./nav/li";
-import { LiInterface } from "./nav/li";
 import { useState } from "react";
 import ShortHeaderNav from "./short-header/nav";
 
