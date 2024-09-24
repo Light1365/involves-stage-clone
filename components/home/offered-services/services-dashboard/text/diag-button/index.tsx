@@ -13,15 +13,15 @@ const DiagButton = ({
 }: DiagButtonInterface) => {
   return (
     <div className="">
-      {isButton && [
+      {isButton && (
         <a
           href=""
           className="text-blue-500 font-bold text-xl font-sans flex flex-row items-center gap-2"
         >
           {text}
-          <FaArrowRightLong size={17} style={{marginTop: 4}}/>
-        </a>,
-      ]}
+          <FaArrowRightLong size={17} style={{ marginTop: 4 }} />
+        </a>
+      )}
     </div>
   );
 };
