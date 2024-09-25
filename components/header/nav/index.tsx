@@ -1,4 +1,3 @@
-import { GoChevronDown } from "react-icons/go";
 import { IoIosGlobe } from "react-icons/io";
 import HeaderNavLi, { LiInterface } from "./li";
 import { useState } from "react";
