@@ -46,7 +46,7 @@ const ServicesDashboardComponent = () => {
   ];
 
   return (
-    <ul className="flex flex-col gap-6 items-center">
+    <ul className="flex flex-col gap-6 max-[1024px]:gap-0 items-center">
       {navItems.map((item, index) => {
         return <ServicesDashboardProps {...item} key={index} />;
       })}

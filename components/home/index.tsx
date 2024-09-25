@@ -2,7 +2,7 @@ import ClientsLogos from "./diagnostic/clients-logos";
 import InfoComponent from "./diagnostic/info";
 import PresentationVideo from "./general-stats/presentation-video";
 import StatsNumbers from "./general-stats/stats";
-import InfoCard from "./info/card";
+import InfoCard from "./info";
 import OfferedServices from "./offered-services";
 
 const HomeComponent = () => {
@@ -13,7 +13,7 @@ const HomeComponent = () => {
       <PresentationVideo />
       <StatsNumbers />
       <OfferedServices />
-      {/* <InfoCard /> */}
+      <InfoCard />
     </div>
   );
 };

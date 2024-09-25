@@ -1,19 +1,36 @@
-import InfoCardProps, { InfoCardPropsInterface } from "./card";
+import InfoCardItems, { InfoCardPropsInterface } from "./card";
 
 const InfoCard = () => {
-  const infoCardItems: InfoCardPropsInterface[] = [
+  const infoCardProps: InfoCardPropsInterface[] = [
     {
       image: true,
-      title: "AAAAAAAAAAAAAAAAAAAAAAAA",
-      subtitle: "TESTE",
-      bodyText: "",
-      subBodyText: "",
+      src: "/images/dashboard.png",
+      title: "TESTANDO",
+      subtitle: "Soluções de inteligência integradas",
+      bodyText:
+        "Integração entre relatórios complexos e personalizáveis e disponibilidade de consulta em tempo real.",
+      subBodyText:
+        "Mais visibilidade dos produtos, aumento de participação nos pontos naturais, mais presença e pontos extras.",
+      button: true,
+      buttonText: "Quero saber mais",
+    },
+    {
+      image: true,
+      src: "/images/dashboard.png",
+      title: "TESTANDO",
+      subtitle: "Soluções de inteligência integradas",
+      bodyText:
+        "Integração entre relatórios complexos e personalizáveis e disponibilidade de consulta em tempo real.",
+      subBodyText:
+        "Mais visibilidade dos produtos, aumento de participação nos pontos naturais, mais presença e pontos extras.",
+      button: true,
+      buttonText: "Quero saber mais",
     },
   ];
   return (
-    <div className="w-full bg-blue-900 flex flex-col">
-      {infoCardItems.map((item, index) => {
-        return <InfoCardProps {...item} key={index} />;
+    <div className="w-full bg-blue-500 h-full flex flex-row gap-40 justify-center items-center mt-10 pt-0 pb-20">
+      {infoCardProps.map((item, index) => {
+        return <InfoCardItems {...item} key={index} />;
       })}
     </div>
   );

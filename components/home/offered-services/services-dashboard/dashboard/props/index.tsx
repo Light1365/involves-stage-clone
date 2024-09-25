@@ -27,14 +27,16 @@ const ServicesDashboardProps = ({
   listText3,
 }: ServicesDashboardInterface) => {
   return (
-    <div className="flex flex-row w-full even:flex-row-reverse max-[1024px]:flex-col even:max-[1024px]:flex-col max-[1024px]:px-5">
+    <div className="flex flex-row even:flex-row-reverse max-[1024px]:flex-col even:max-[1024px]:flex-col max-[1024px]:px-10">
       {bodyImage && (
         <Image
           alt="teste"
           src={imgSrc}
           width={600}
           height={300}
-          className="m-10 text-black"
+          className="m-10 flex flex-col text-black 
+          max-[1024px]:h-72 max-[1024px]:w-96 
+          max-[450px]:h-40 max-[450px]:w-64 max-[1024px]:bg-red-500"
           style={{ objectFit: "contain" }}
         />
       )}
