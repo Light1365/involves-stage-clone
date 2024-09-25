@@ -22,7 +22,7 @@ const InfoCardItems = ({
   buttonText,
 }: InfoCardPropsInterface) => {
   return (
-    <div className="w-3/12 h-full bg-white flex flex-col justify-center items-center even:mt-64 rounded-2xl relative">
+    <div className="w-[440px] h-full bg-white flex flex-col justify-center items-center even:mt-64 max-[1024px]:even:mt-28 rounded-2xl relative">
       <div className="pb-10 bg-blue-100 bg-opacity-70 rounded-2xl w-11/12 flex justify-center pt">
         {image && (
           <Image
@@ -60,3 +60,5 @@ const InfoCardItems = ({
 };
 
 export default InfoCardItems;
+
+//TRANSLATE-Y NA FOTO
