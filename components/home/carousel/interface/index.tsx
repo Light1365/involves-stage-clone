@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { IoChevronForwardSharp } from "react-icons/io5";
-import { IoChevronBackSharp } from "react-icons/io5";
 
 export interface ClientsCarouselInterface {
   logo: boolean;
@@ -9,10 +7,12 @@ export interface ClientsCarouselInterface {
   bodyText: any;
   nameText: any;
   roleText: any;
-  arrowLeft: boolean;
-  arrowRight: boolean;
+  id: number;
 }
 
+export interface Props extends ClientsCarouselInterface {
+  isCurrentActiveCard: any;
+}
 const ClientsCarouselProps = ({
   logo = true,
   src,
@@ -20,12 +20,16 @@ const ClientsCarouselProps = ({
   bodyText,
   nameText,
   roleText,
-  arrowLeft = false,
-  arrowRight = false,
-}: ClientsCarouselInterface) => {
+  id,
+  isCurrentActiveCard,
+}: Props) => {
   return (
-    <div className="flex flex-row justify-center items-center gap-10 pt-20 pb-20 flex-grow mx-40">
-      <div className=" bg-blue-900 w-full flex flex-row py-24 justify-center items-center rounded-xl">
+    <div
+      className={`flex flex-row justify-center items-center gap-10 pt-20 pb-20 flex-grow mx-40 absolute left-0 top-0 ${
+        id === isCurrentActiveCard ? "visible" : "invisible"
+      }`}
+    >
+      <div className="bg-blue-900 w-full flex flex-row py-24 justify-center items-center rounded-xl">
         {logo && (
           <Image
             alt=""

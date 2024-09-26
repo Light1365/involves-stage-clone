@@ -23,15 +23,14 @@ const InfoCardItems = ({
 }: InfoCardPropsInterface) => {
   return (
     <div className="w-[440px] h-full bg-white flex flex-col justify-center items-center even:mt-64 max-[1024px]:even:mt-28 rounded-2xl relative">
-      <div className="pb-10 bg-blue-100 bg-opacity-70 rounded-2xl w-11/12 flex justify-center pt">
+      <div className="pb-10 bg-blue-100 bg-opacity-100 rounded-2xl w-11/12 flex justify-center -translate-y-14">
         {image && (
           <Image
             alt=""
             width={400}
             height={300}
             src={src}
-            className="-translate-y-12 
-          "
+            className="-translate-y-12"
           />
         )}
       </div>
