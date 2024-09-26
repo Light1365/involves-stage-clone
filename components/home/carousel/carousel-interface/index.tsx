@@ -25,7 +25,7 @@ const ClientsCarouselProps = ({
 ClientsCarouselInterface) => {
   return (
     <div
-      className={`flex flex-row justify-center items-center gap-10 pt-20 pb-20 flex-grow mx-40 absolute left-0 top-0 `}
+      className="flex flex-row justify-center items-center gap-10 pt-20 pb-20 flex-grow mx-40 absolute left-0 top-0"
       // ${id === isCurrentActiveCard ? "visible" : "invisible" }
     >
       <div className="bg-blue-900 w-full flex flex-row py-24 justify-center items-center rounded-xl">
