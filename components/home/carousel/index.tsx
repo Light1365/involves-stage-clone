@@ -1,12 +1,12 @@
 "use client";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { IoChevronForwardCircleOutline } from "react-icons/io5";
-import ClientsCarouselProps, { ClientsCarouselInterface } from "./interface";
+import ClientsCarouselProps, { ClientsCarouselInterface } from "./carousel-interface";
 import { useState } from "react";
 
 const ClientsCarousel = () => {
 
-  const [activeCard, setActiveCard] = useState(0);
+  // const [activeCard, setActiveCard] = useState(0);:
   
   const carouselItems: ClientsCarouselInterface[] = [
     {
@@ -41,7 +41,7 @@ const ClientsCarousel = () => {
       </button>
       <div className="flex-grow flex flex-row flex-nowrap h-full relative">
         {carouselItems.map((item, index) => {
-          return <ClientsCarouselProps isCurrentActiveCard={activeCard} {...item} key={index} />;
+          return <ClientsCarouselProps  {...item} key={index} />;
         })}
       </div>
       <button className="pr-20">

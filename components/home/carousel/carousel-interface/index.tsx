@@ -10,9 +10,9 @@ export interface ClientsCarouselInterface {
   id: number;
 }
 
-export interface Props extends ClientsCarouselInterface {
-  isCurrentActiveCard: any;
-}
+// export interface Props extends ClientsCarouselInterface {
+//   isCurrentActiveCard: any;
+// }
 const ClientsCarouselProps = ({
   logo = true,
   src,
@@ -21,13 +21,12 @@ const ClientsCarouselProps = ({
   nameText,
   roleText,
   id,
-  isCurrentActiveCard,
-}: Props) => {
+}: // isCurrentActiveCard,
+ClientsCarouselInterface) => {
   return (
     <div
-      className={`flex flex-row justify-center items-center gap-10 pt-20 pb-20 flex-grow mx-40 absolute left-0 top-0 ${
-        id === isCurrentActiveCard ? "visible" : "invisible"
-      }`}
+      className={`flex flex-row justify-center items-center gap-10 pt-20 pb-20 flex-grow mx-40 absolute left-0 top-0 `}
+      // ${id === isCurrentActiveCard ? "visible" : "invisible" }
     >
       <div className="bg-blue-900 w-full flex flex-row py-24 justify-center items-center rounded-xl">
         {logo && (
