@@ -30,7 +30,7 @@ const InfoCardItems = ({
             width={400}
             height={300}
             src={src}
-            className="relative 
+            className="-translate-y-12 
           "
           />
         )}
@@ -39,7 +39,7 @@ const InfoCardItems = ({
         <h1 className="w-full flex flex-row text-blue-500 font-bold text-md font-sans tracking-[0.3em] justify-start items-start">
           {title}
         </h1>
-        <b className="w-full flex flex-row text-black font-bold text-4xl font-sans justify-start items-start">
+        <b className="w-full flex flex-row text-black font-bold text-3xl font-sans justify-start items-start">
           {subtitle}
         </b>
         <b className="flex flex-row text-gray-500 font-normal mt-10">
