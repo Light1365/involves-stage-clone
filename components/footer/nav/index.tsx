@@ -54,15 +54,15 @@ const FooterNav = () => {
   ];
 
   return (
-    <div className="w-full items-center flex flex-col max-[1020px]:hidden">
+    <div className="w-full items-center flex flex-col max-[1024px]:flex-col z-50">
       <FormNav />
-      <ul className="bg-blue-900 w-full flex flex-row pt-20 pb-10 justify-center max-[1020px]:hidden">
+      <ul className="bg-blue-900 w-full flex flex-row pt-20 pb-10 justify-center max-[1024px]:">
         {navItems.map((item, index) => {
           return <FooterNavLi {...item} key={index} />;
         })}
       </ul>
       <div
-        className="w-full pl-1 pr-1 bg-gradient-to-r from-blue-900 via-cyan-500 to-blue-900 max-[1020px]:hidden"
+        className="w-full pl-1 pr-1 bg-gradient-to-r from-blue-900 via-cyan-500 to-blue-900 max-[1024px]:"
         style={{ height: 1 }}
       ></div>
       <ul className="w-full bg-blue-900 h-28 flex flex-row justify-start items-center">

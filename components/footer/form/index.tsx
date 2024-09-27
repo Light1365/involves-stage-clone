@@ -30,7 +30,7 @@ const FormNav = () => {
   ];
 
   return (
-    <ul className="bg-blue-900 w-full h-full flex flex-col pt-10 justify-center items-center max-[1020px]:">
+    <ul className="bg-blue-900 w-full h-full flex flex-col pt-10 justify-center items-center max-[1024px]:pb-10">
       {navItems.map((item, index) => {
         return <FormFields {...item} key={index} />;
       })}

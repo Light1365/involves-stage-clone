@@ -40,7 +40,7 @@ const UnderFooterNav = () => {
   ];
 
   return (
-      <ul className="bg-blue-900 w-full flex flex-row justify-around items-center pl-40 mr-40 max-[1020px]:hidden">
+      <ul className="bg-blue-900 w-full flex flex-row justify-around items-center pl-40 mr-40 max-[1024px]:">
         {navItems.map((item, index) => {
           return <UnderFooterNavLi {...item} key={index} />;
         })}

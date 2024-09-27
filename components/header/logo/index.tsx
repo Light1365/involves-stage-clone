@@ -2,8 +2,6 @@ import bpFullLogo from "@/public/images/bp full black resized.png";
 import Image from "next/image";
 
 const HeaderLogo = () => {
-  const imgUrl = "";
-
   return (
     <a href="home">
       <Image
