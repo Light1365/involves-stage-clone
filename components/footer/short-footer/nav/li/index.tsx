@@ -38,7 +38,7 @@ const UnderFooterNavLi = ({
 <a href={redirectLink} className="">{languageContent}</a>
      )}</div>
     {isSocialMediaIcon && (
-        <div className="flex flex-row justify-start gap-2 items-center w-full">
+        <div className="flex flex-row justify-start gap-2 items-center w-4/12 max-[1024px]:justify-between">
 <a href=""><FaSquareFacebook/></a>
 <a href=""><FaInstagram/></a>
 <a href=""><FaLinkedinIn/></a>

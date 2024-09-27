@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 
 export interface FormInterface {
   //define os tipos de valores aceitos por cada prop
@@ -48,14 +47,14 @@ const FormFields = ({
 
 FormInterface) => {
   return (
-    <div className="flex items-center flex-col">
+    <div className="flex items-center flex-col gap-10 mx-40">
       {formTitle && (
-        <h1 className="pb-10 w-full max-w-lg text-wrap justify-center flex font-sans text-white opacity-70 text-center text-3xl">
+        <h1 className="w-full max-w-screen-sm text-wrap justify-center font-sans text-white opacity-70 text-center text-3xl">
           {formTitleContent}
         </h1>
       )}
       <div className="flex flex-col items-center justify-center">
-        <li className="bg-white max-w-screen rounded-2xl w-4/12 justify-center font-sans font-normal text-black pl-16 pr-16">
+        <li className="bg-white max-w-full rounded-2xl w-[425px] justify-center font-sans font-normal text-black px-10">
           {nameField && (
             <div>
               <h1 className="pt-6 font-sans">{nameFieldTitle}</h1>
@@ -98,7 +97,7 @@ FormInterface) => {
             </h1>
           )}
           {isTermsCheckbox && (
-            <div className="flex flex-row pt-5 text-balance items-start text-sm">
+            <div className="flex flex-row pt-5 items-start text-sm">
               <input type="checkbox" className="mt-1 mr-1"></input>
               <h1>{isTermCheckboxText}</h1>
             </div>

@@ -50,42 +50,36 @@ const FooterNavLi = ({
   isLogoAvailable = false,
 }: FooterLiInterface) => {
   return (
-    <li className="font-sans font-medium text-white px-10">
+    <li className="flex flex-col font-sans font-medium text-white px-10 gap-10">
       {isLogoAvailable && <FooterLogo />}
-      {isLinkAvailable && (
-        <a href={redirectLink} className="">
-          {listTitle}
+      <h1 className="w-full text-md">{listTitle}</h1>
+      <span className="flex w-min flex-col opacity-60 font-normal text-pretty gap-3">
+        <a href={redirectLink1} target="_blank" className="">
+          {listContent1}
         </a>
-      )}
-      {listTitle && (
-        <h1 className="flex flex-col opacity-60 font-normal pt-1 text-pretty w-36 gap-3 text-sm">
-          <a href={redirectLink1} target="_blank" className="">
-            {listContent1}
-          </a>
-          <a href={redirectLink2} className="">
-            {listContent2}
-          </a>
-          <a href={redirectLink3} className="">
-            {listContent3}
-          </a>
-          <a href={redirectLink4} className="">
-            {listContent4}
-          </a>
-          <a href={redirectLink5} className="">
-            {listContent5}
-          </a>
-          <a href={redirectLink6} className="">
-            {listContent6}
-          </a>
-        </h1>
-      )}
+        <a href={redirectLink2} className="">
+          {listContent2}
+        </a>
+        <a href={redirectLink3} className="">
+          {listContent3}
+        </a>
+        <a href={redirectLink4} className="">
+          {listContent4}
+        </a>
+        <a href={redirectLink5} className="">
+          {listContent5}
+        </a>
+        <a href={redirectLink6} className="">
+          {listContent6}
+        </a>
+      </span>
       {list2Title && (
-        <h1 className="flex flex-col font-medium gap-1 text-pretty w-20 text-sm">
-          <a className="text-base text-white opacity-100">{list2Title}</a>
-          <a href={redirect2Link} className="mt-4 opacity-60 font-normal">
+        <div className="flex flex-col gap-4">
+          <h1 className="text-pretty text-md">{list2Title}</h1>
+          <a href={redirect2Link} className="opacity-60 font-normal">
             {list2Content}
           </a>
-        </h1>
+        </div>
       )}
     </li>
   );

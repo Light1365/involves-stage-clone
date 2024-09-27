@@ -11,7 +11,7 @@ const Header = () => {
     setIsOpen((isOpen) => !isOpen);
   }
   return (
-    <header className="text-black flex flex-row items-center justify-between w-full p-4 px-24 max-[1120px]:px-10 bg-slate-100">
+    <header className="text-black flex flex-row items-center justify-between w-full p-4 px-24 max-[1124px]:px-10 bg-slate-100">
       <HeaderLogo />
       <HeaderNav />
       <PiHamburger

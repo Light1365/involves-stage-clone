@@ -8,7 +8,7 @@ import OfferedServices from "./offered-services";
 
 const HomeComponent = () => {
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 w-full">
       <InfoComponent />
       <ClientsLogos />
       <StatsNumbers />

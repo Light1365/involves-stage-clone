@@ -29,12 +29,10 @@ const InfoCard = () => {
   ];
   return (
     <div
-      className="w-full bg-blue-500 h-full flex flex-row gap-40 justify-center items-center mt-10 pt-0 pb-20 
+      className="w-full bg-blue-500 h-full flex flex-row gap-20 justify-center items-center mt-10 pt-10 pb-10 
     max-[1024px]:flex-col 
     max-[1024px]:items-center 
-    max-[1024px]:pt-20
-    max-[1024px]:gap-0
-    max-[1024px]:
+    max-[1024px]:pt-40
     "
     >
       {infoCardProps.map((item, index) => {
