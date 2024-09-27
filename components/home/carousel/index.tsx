@@ -31,7 +31,7 @@ const ClientsCarousel = () => {
     },
   ];
   return (
-    <div className="w-full h-[766px] flex flex-row justify-center items-center px-24">
+    <div className="w-full h-[766px] flex flex-row justify-center items-center px-24 mb-24">
       <button className="pl-20"
       >
         <IoChevronBackCircleOutline

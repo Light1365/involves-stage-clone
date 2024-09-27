@@ -50,7 +50,7 @@ const FooterNavLi = ({
   isLogoAvailable = false,
 }: FooterLiInterface) => {
   return (
-    <li className="font-sans font-medium text-white pl-10 pr-10">
+    <li className="font-sans font-medium text-white px-10">
       {isLogoAvailable && <FooterLogo />}
       {isLinkAvailable && (
         <a href={redirectLink} className="">
@@ -58,29 +58,29 @@ const FooterNavLi = ({
         </a>
       )}
       {listTitle && (
-        <h1 className="flex flex-col opacity-60 font-normal pt-1 text-pretty w-20 text-sm">
-          <a href={redirectLink1} target="_blank" className="mt-4">
+        <h1 className="flex flex-col opacity-60 font-normal pt-1 text-pretty w-36 gap-3 text-sm">
+          <a href={redirectLink1} target="_blank" className="">
             {listContent1}
           </a>
-          <a href={redirectLink2} className="mt-4">
+          <a href={redirectLink2} className="">
             {listContent2}
           </a>
-          <a href={redirectLink3} className="mt-4">
+          <a href={redirectLink3} className="">
             {listContent3}
           </a>
-          <a href={redirectLink4} className="mt-4">
+          <a href={redirectLink4} className="">
             {listContent4}
           </a>
-          <a href={redirectLink5} className="mt-4">
+          <a href={redirectLink5} className="">
             {listContent5}
           </a>
-          <a href={redirectLink6} className="mt-4">
+          <a href={redirectLink6} className="">
             {listContent6}
           </a>
         </h1>
       )}
       {list2Title && (
-        <h1 className="flex flex-col font-medium pt-1 text-pretty w-20 text-sm">
+        <h1 className="flex flex-col font-medium gap-1 text-pretty w-20 text-sm">
           <a className="text-base text-white opacity-100">{list2Title}</a>
           <a href={redirect2Link} className="mt-4 opacity-60 font-normal">
             {list2Content}

@@ -27,21 +27,21 @@ const ServicesDashboardProps = ({
   listText3,
 }: ServicesDashboardInterface) => {
   return (
-    <div className="flex flex-row even:flex-row-reverse max-[1024px]:flex-col even:max-[1024px]:flex-col max-[1024px]:px-10 max-[1024px]:items-center">
+    <div className="flex flex-row w-auto px-20 even:flex-row-reverse mt-10 max-[1024px]:flex-col even:max-[1024px]:flex-col max-[1024px]:px-10 max-[1024px]:items-center">
       {bodyImage && (
         <Image
           alt="teste"
           src={imgSrc}
-          width={600}
+          width={300}
           height={300}
-          className="m-10 flex justify-center  text-black 
+          className="m-10 flex w-full justify-center  text-black 
           max-[1024px]:h-72 max-[1024px]:w-96 
           max-[450px]:h-40 max-[450px]:w-64"
           style={{ objectFit: "contain" }}
         />
       )}
       <div className="w-full min-h-fit flex flex-row mt-10 max-[1024px]:mt-2 max-[1024px]:mb-10">
-        <div className="flex flex-col gap-6 px-20 max-[1120px]:px-10 max-[1040px]:px-0">
+        <div className="flex flex-col gap-6 max-[1120px]:px-10 max-[1040px]:px-0">
           <h1 className="text-black font-sans text-5xl font-bold max-[1024px]:text-xl">
             {titleText}
           </h1>
@@ -59,7 +59,7 @@ const ServicesDashboardProps = ({
           {isButton && (
             <a
               href=""
-              className="text-blue-500 font-bold text-xl font-sans flex flex-row items-center gap-2"
+              className="text-blue-500 font-bold text-xl font-sans flex flex-row items-center gap-2 w-fit"
             >
               {buttonText}
               <FaArrowRightLong size={17} style={{ marginTop: 4 }} />

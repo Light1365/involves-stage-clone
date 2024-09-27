@@ -104,7 +104,7 @@ FormInterface) => {
             </div>
           )}
           {isSubmitButton && (
-            <button className="h-10 w-20 bg-blue-500 text-white mt-10 mr-10 mb-10 font-sans">
+            <button className="h-11 mb-10 mt-10 w-auto font-bold bg-blue-500 pl-10 pr-10 rounded-full text-white hover:bg-blue-900 hover:ease-in-out duration-300 focus:outline-none focus:ring focus:ring-blue-300">
               Enviar
             </button>
           )}

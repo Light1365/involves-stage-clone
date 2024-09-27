@@ -18,7 +18,7 @@ const Header = () => {
         size={32}
         className="hidden max-[1024px]:block cursor-pointer"
         onClick={toggleShortDropdown}
-      />{" "}
+      />
       {isOpen ? <ShortHeaderNav /> : null}
     </header>
   );

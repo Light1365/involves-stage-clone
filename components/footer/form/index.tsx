@@ -2,6 +2,7 @@ import { GoChevronDown } from "react-icons/go";
 import { IoIosGlobe } from "react-icons/io";
 import { useState } from "react";
 import FormFields, { FormInterface } from "./li";
+import Image from "next/image";
 
 const FormNav = () => {
   const navItems: FormInterface[] = [
@@ -30,7 +31,10 @@ const FormNav = () => {
   ];
 
   return (
-    <ul className="bg-blue-900 w-full h-full flex flex-col pt-10 justify-center items-center max-[1024px]:pb-10">
+    <ul className="bg-blue-900 w-full flex flex-col justify-center items-center max-[1024px]:pb-10">
+      <div className="w-10/12 py-10 rounded-xl bg-blue-500 -translate-y-36 flex flex-row justify-center items-center">
+        <Image alt="" src={"/images/dashboard.png"} width={350} height={300} className="w-auto h-full object-contain"></Image>
+      </div>
       {navItems.map((item, index) => {
         return <FormFields {...item} key={index} />;
       })}
